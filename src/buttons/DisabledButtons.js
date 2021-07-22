@@ -34,6 +34,10 @@ const Styles = styled.div`
     font-family: Roboto, sans-serif;
     font-weight: 500;
   }
+  h1 {
+    border-bottom: none;
+    margin-bottom: 0;
+  }
   .button-box {
     display: flex;
     flex-direction: column;
@@ -187,16 +191,16 @@ const buttons = [
   { id: "006", className: "danger-button", title: "Danger" }
 ];
 
-const BasicHoverButtons = () => {
+const DisabledButtons = () => {
   return (
     <Styles>
       <div className="chartBox">
         <div className="container-head">
-          <h1>Basic form</h1>
+          <h1>Disabled Buttons</h1>
         </div>
         <div className="button-box">
           {buttons.map((button, index) => (
-            <button key={index} className={button.className}>
+            <button disabled key={index} className={button.className}>
               {button.title}
             </button>
           ))}
@@ -205,4 +209,4 @@ const BasicHoverButtons = () => {
     </Styles>
   );
 };
-export default BasicHoverButtons;
+export default DisabledButtons;

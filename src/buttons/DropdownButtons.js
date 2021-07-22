@@ -187,7 +187,7 @@ const buttons = [
   { id: "006", className: "danger-button", title: "Danger" }
 ];
 
-const BasicHoverButtons = () => {
+const DropdownButtons = () => {
   return (
     <Styles>
       <div className="chartBox">
@@ -205,4 +205,4 @@ const BasicHoverButtons = () => {
     </Styles>
   );
 };
-export default BasicHoverButtons;
+export default DropdownButtons;
